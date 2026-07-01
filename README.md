@@ -1,54 +1,57 @@
-📝 Todo List App
+# ✅ iTask
 
-A fully responsive and state-driven Todo application built with React, Tailwind CSS, and Vite.
-The app demonstrates modern React patterns including Hooks-based state management, immutability principles, and persistent local storage integration.
+A modern task management application built with React to practice component-based architecture, state management, and CRUD operations.
 
-✨ Features
-Add, edit, and delete tasks
-Toggle task completion with conditional styling
-Filter completed tasks dynamically
-Persistent storage using localStorage
-Responsive UI built with Tailwind CSS
+> ⚠️ This project was built as part of my React learning journey and focuses on understanding React fundamentals rather than implementing advanced backend features.
 
-Component-driven architecture
-⚙️ Architecture & Implementation Details
-🔹 State Management & Persistence
-The application uses useState with a lazy initializer to load previously saved todos from localStorage during initial render.
-A useEffect hook watches the todos state and automatically synchronizes updates to localStorage, ensuring persistence across sessions.
+---
 
-🔹 Adding & Editing Tasks
-A unified handleAdd function manages both creation and editing modes.
-When eid (edit ID) is null, a new todo object is appended.
-When eid is set, the existing todo is updated using .map() to return a new immutable array.
-This ensures React's state immutability principles are maintained.
+## ✨ Features
 
-🔹 Toggling & Deleting
-To preserve immutability:
-handleToggle uses .map() to flip the isCompleted property.
-handleDelete uses .filter() to remove the selected task.
-No direct mutation of state occurs.
+- Add new tasks
+- Edit existing tasks
+- Delete tasks
+- Mark tasks as completed
+- Responsive UI
+- State management using React Hooks
+- Clean component-based architecture
 
-🔹 Rendering Logic
+---
 
-Before rendering:
-A .filter() operation determines visibility based on the “Show Finished” toggle.
-Conditional class application applies a line-through style when a task is completed.
-The UI remains a direct reflection of component state.
+## 🛠 Tech Stack
 
-🛠 Tech Stack
-React (useState, useEffect)
-Tailwind CSS
-Vite
-React Icons
+- React
+- JavaScript (ES6)
+- Tailwind CSS
+- HTML5
+- CSS3
 
-🚀 Getting Started
-Prerequisites
-Node.js
-npm / yarn / pnpm
-Installation
-git clone https://github.com/imjoe77/Todo-List.git
-cd Todo-List
-npm install
-npm run dev
+---
 
-Runs on: http://localhost:5173
+## 📚 What I Learned
+
+While building this project, I gained practical experience with:
+
+- React Components
+- JSX
+- Props
+- State Management
+- React Hooks
+- Event Handling
+- Conditional Rendering
+- CRUD Operations
+- Component Reusability
+
+---
+
+## 👨‍💻 Author
+
+Nathaniel Bandi
+
+GitHub: https://github.com/imjoe77
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
